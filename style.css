@@ -32,7 +32,8 @@
 
 body {
     /* background-color: var(--gray); */
-    background: linear-gradient(45deg, var(--gray), var(--gray-secondary));
+    /* background: linear-gradient(45deg, var(--gray), var(--gray-secondary)); */
+    background: linear-gradient(45deg, var(--black), var(--gray));
     color: var(--black);
 
     font-family: var(--primary-font);
