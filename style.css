@@ -9,8 +9,9 @@
     --gray-secondary: #424242;
 
     --white: #ffffff;
-    --off-white: #fafafa;
-    --off-white-secondary: #f5f5f5;
+    --white-secondary: #fafafa;
+    --white-tertiary: #f5f5f5;
+    --off-white: #e2e2e2;
 
     /* Accent colors */
     --red-400: #ef5350;
@@ -23,37 +24,35 @@
     --primary-font: 'Poppins', 'Montserrat', Arial, sans-serif;
 }
 
+/* Clean all styles */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box; /* border-box: width + padding + border */
+    height: 100%; /* for sticky footer */
+}
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+    box-sizing: inherit; /* inherit from html */
+    margin: 0; /* reset margin */
+    padding: 0; /* reset padding */
 }
 
 body {
-    /* background-color: var(--gray); */
-    /* background: linear-gradient(45deg, var(--gray), var(--gray-secondary)); */
     background: linear-gradient(45deg, var(--black), var(--gray));
     color: var(--black);
-
     font-family: var(--primary-font);
     text-rendering: optimizeLegibility;
-
-    height: 100vh;
-    width: 100vw;
-    margin: 0rem;
-    overflow: hidden;
 }
 
 button {
-    background-color: var(--off-white-secondary);
+    background-color: var(--white-tertiary);
     color: var(--black);
 
 
     font-family: var(--primary-font);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
 
     border: none;
@@ -61,7 +60,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--off-white);
+    background-color: var(--white-secondary);
 }
 
 button:active {
@@ -113,11 +112,11 @@ button:active {
     /* height: calc(100% - 10px); */
     overflow: hidden;
     
-    /* background-color: var(--off-white-secondary); */
+    /* background-color: var(--white-tertiary); */
     color: var(--black);
 
     font-family: var(--primary-font);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
     text-align: right;
     
@@ -128,7 +127,7 @@ button:active {
 #logo {
     font-family: monospace;
     text-align: right;
-    font-size: 2.5rem;
+    font-size: 4rem;
 
     position: absolute;
     margin: 1rem 1rem;
